@@ -1,12 +1,13 @@
 ﻿<div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PersonaliAI/.github/main/profile/assets/personali-mark-orange.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PersonaliAI/.github/main/profile/assets/personali-mark-orange.png">
-  <img src="https://raw.githubusercontent.com/PersonaliAI/.github/main/profile/assets/personali-mark-orange.png" alt="PersonaliAI" width="76" height="76">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PersonaliAI/.github/main/profile/assets/personali-logo-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PersonaliAI/.github/main/profile/assets/personali-logo.png">
+  <img src="https://raw.githubusercontent.com/PersonaliAI/.github/main/profile/assets/personali-logo.png" alt="PersonaliAI" width="380">
 </picture>
 
-# PersonaliAI
+<br/>
+<br/>
 
 ### AI tools built for your life & work.
 
