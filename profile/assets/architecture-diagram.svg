@@ -1,0 +1,181 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#090d16" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="cyanCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="purpleCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="emeraldCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <linearGradient id="lineGradCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="lineGradGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+
+    <filter id="cardGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .arch-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 15px; }
+      .arch-desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 400; font-size: 12px; fill: #94a3b8; }
+      .arch-tag { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 600; font-size: 10px; }
+      .layer-header { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 800; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; }
+      .conn-line { stroke: #475569; stroke-width: 1.5; stroke-dasharray: 4 4; }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="100%" height="100%" rx="16" fill="#070a13" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- ================= TOP LAYER: CLIENTS & DISTRIBUTION ================= -->
+  <g transform="translate(40, 30)">
+    <text x="0" y="0" fill="#38bdf8" class="layer-header">● OMNI-CHANNEL DISTRIBUTION LAYER (CLIENTS &amp; SDKs)</text>
+    
+    <!-- 6 SDK / Surface Cards -->
+    <!-- Card 1: Web Widget -->
+    <g transform="translate(0, 15)">
+      <rect width="140" height="75" rx="10" fill="url(#cyanCard)" stroke="#0284c7" stroke-width="1.2"/>
+      <text x="14" y="26" fill="#f8fafc" class="arch-title">🌐 Web Widget</text>
+      <text x="14" y="44" class="arch-desc">Shadow DOM · Zero iframe</text>
+      <rect x="14" y="52" width="76" height="16" rx="4" fill="#0369a1" fill-opacity="0.4"/>
+      <text x="19" y="64" fill="#38bdf8" class="arch-tag">JavaScript / React</text>
+    </g>
+
+    <!-- Card 2: React Native -->
+    <g transform="translate(155, 15)">
+      <rect width="140" height="75" rx="10" fill="url(#cyanCard)" stroke="#0284c7" stroke-width="1.2"/>
+      <text x="14" y="26" fill="#f8fafc" class="arch-title">⚛️ React Native</text>
+      <text x="14" y="44" class="arch-desc">Script Method + Native UI</text>
+      <rect x="14" y="52" width="68" height="16" rx="4" fill="#0369a1" fill-opacity="0.4"/>
+      <text x="19" y="64" fill="#38bdf8" class="arch-tag">npm package</text>
+    </g>
+
+    <!-- Card 3: Flutter -->
+    <g transform="translate(310, 15)">
+      <rect width="140" height="75" rx="10" fill="url(#cyanCard)" stroke="#0284c7" stroke-width="1.2"/>
+      <text x="14" y="26" fill="#f8fafc" class="arch-title">💙 Flutter SDK</text>
+      <text x="14" y="44" class="arch-desc">ChattyEmbedScreen</text>
+      <rect x="14" y="52" width="70" height="16" rx="4" fill="#0369a1" fill-opacity="0.4"/>
+      <text x="19" y="64" fill="#38bdf8" class="arch-tag">pub.dev pkg</text>
+    </g>
+
+    <!-- Card 4: Android -->
+    <g transform="translate(465, 15)">
+      <rect width="140" height="75" rx="10" fill="url(#cyanCard)" stroke="#0284c7" stroke-width="1.2"/>
+      <text x="14" y="26" fill="#f8fafc" class="arch-title">🤖 Android SDK</text>
+      <text x="14" y="44" class="arch-desc">Jetpack Compose UI</text>
+      <rect x="14" y="52" width="62" height="16" rx="4" fill="#0369a1" fill-opacity="0.4"/>
+      <text x="19" y="64" fill="#38bdf8" class="arch-tag">Kotlin / JitPack</text>
+    </g>
+
+    <!-- Card 5: iOS -->
+    <g transform="translate(620, 15)">
+      <rect width="140" height="75" rx="10" fill="url(#cyanCard)" stroke="#0284c7" stroke-width="1.2"/>
+      <text x="14" y="26" fill="#f8fafc" class="arch-title">🍎 iOS SDK</text>
+      <text x="14" y="44" class="arch-desc">SwiftUI Native Chat</text>
+      <rect x="14" y="52" width="60" height="16" rx="4" fill="#0369a1" fill-opacity="0.4"/>
+      <text x="19" y="64" fill="#38bdf8" class="arch-tag">Swift / SPM</text>
+    </g>
+
+    <!-- Card 6: WordPress / Messaging -->
+    <g transform="translate(775, 15)">
+      <rect width="145" height="75" rx="10" fill="url(#cyanCard)" stroke="#0284c7" stroke-width="1.2"/>
+      <text x="14" y="26" fill="#f8fafc" class="arch-title">🔌 WordPress / TG</text>
+      <text x="14" y="44" class="arch-desc">WP Plugin &amp; Telegram</text>
+      <rect x="14" y="52" width="76" height="16" rx="4" fill="#0369a1" fill-opacity="0.4"/>
+      <text x="19" y="64" fill="#38bdf8" class="arch-tag">Zero-code install</text>
+    </g>
+  </g>
+
+  <!-- Connectors between Layer 1 and 2 -->
+  <path d="M 110 120 L 110 160 L 500 160 L 500 180" class="conn-line"/>
+  <path d="M 265 120 L 265 160" class="conn-line"/>
+  <path d="M 420 120 L 420 160" class="conn-line"/>
+  <path d="M 575 120 L 575 160" class="conn-line"/>
+  <path d="M 730 120 L 730 160" class="conn-line"/>
+  <path d="M 885 120 L 885 160" class="conn-line"/>
+
+  <!-- ================= MIDDLE LAYER: CORE PRODUCTS & INTELLIGENCE ================= -->
+  <g transform="translate(40, 185)">
+    <text x="0" y="0" fill="#a78bfa" class="layer-header">● CORE INTELLIGENCE &amp; AGENT PLATFORMS</text>
+    
+    <!-- Platform 1: Chatty Platform -->
+    <g transform="translate(0, 15)">
+      <rect width="445" height="110" rx="12" fill="url(#purpleCard)" stroke="#7c3aed" stroke-width="1.5"/>
+      <text x="20" y="32" fill="#ffffff" class="arch-title">💬 Chatty — Open-Source Customer AI Support</text>
+      <text x="20" y="54" class="arch-desc">RAG over Docs &amp; Web · Conversational Booking (Meet/Zoom) · CSAT</text>
+      <text x="20" y="72" class="arch-desc">Human Agent Real-Time Takeover · Multi-Bot Workspaces · Analytics</text>
+      <g transform="translate(20, 82)">
+        <rect width="84" height="18" rx="4" fill="#581c87"/>
+        <text x="7" y="13" fill="#c084fc" class="arch-tag">Next.js 15 App</text>
+        <rect x="92" width="76" height="18" rx="4" fill="#581c87"/>
+        <text x="100" y="13" fill="#c084fc" class="arch-tag">FastAPI Core</text>
+        <rect x="176" width="94" height="18" rx="4" fill="#581c87"/>
+        <text x="184" y="13" fill="#c084fc" class="arch-tag">Vector pgvector</text>
+      </g>
+    </g>
+
+    <!-- Platform 2: Kin & Voice Agents -->
+    <g transform="translate(475, 15)">
+      <rect width="445" height="110" rx="12" fill="url(#purpleCard)" stroke="#7c3aed" stroke-width="1.5"/>
+      <text x="20" y="32" fill="#ffffff" class="arch-title">🎙️ Kin &amp; LiveKit Real-Time Voice Agents</text>
+      <text x="20" y="54" class="arch-desc">Ultra Low-Latency WebRTC Audio · Full Duplex Voice Streaming</text>
+      <text x="20" y="72" class="arch-desc">Autonomous Executive Actions (Email, Calendar, Social) · Long-Term Memory</text>
+      <g transform="translate(20, 82)">
+        <rect width="88" height="18" rx="4" fill="#581c87"/>
+        <text x="8" y="13" fill="#c084fc" class="arch-tag">LiveKit WebRTC</text>
+        <rect x="96" width="90" height="18" rx="4" fill="#581c87"/>
+        <text x="104" y="13" fill="#c084fc" class="arch-tag">Silero VAD / STT</text>
+        <rect x="194" width="84" height="18" rx="4" fill="#581c87"/>
+        <text x="202" y="13" fill="#c084fc" class="arch-tag">LiteLLM Engine</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Connectors between Layer 2 and 3 -->
+  <path d="M 260 315 L 260 340 L 500 340 L 500 355" class="conn-line"/>
+  <path d="M 740 315 L 740 340" class="conn-line"/>
+
+  <!-- ================= BOTTOM LAYER: RUNTIME, INFRASTRUCTURE & BYOK ================= -->
+  <g transform="translate(40, 360)">
+    <text x="0" y="0" fill="#34d399" class="layer-header">● INFRASTRUCTURE, PRIVACY &amp; MODEL ECOSYSTEM</text>
+    
+    <g transform="translate(0, 15)">
+      <rect width="920" height="75" rx="12" fill="url(#emeraldCard)" stroke="#059669" stroke-width="1.3"/>
+      
+      <g transform="translate(24, 24)">
+        <text x="0" y="16" fill="#ecfdf5" class="arch-title">🐳 Self-Hostable Docker Stack</text>
+        <text x="0" y="36" class="arch-desc">Deploy in minutes with 1-click Docker Compose</text>
+      </g>
+
+      <g transform="translate(330, 24)">
+        <text x="0" y="16" fill="#ecfdf5" class="arch-title">🛡️ Data Sovereignty &amp; Privacy</text>
+        <text x="0" y="36" class="arch-desc">PostgreSQL · pgvector · Redis Cache · Zero telemetry</text>
+      </g>
+
+      <g transform="translate(635, 24)">
+        <text x="0" y="16" fill="#ecfdf5" class="arch-title">⚡ Multi-LLM BYOK Support</text>
+        <text x="0" y="36" class="arch-desc">OpenAI · Anthropic · Gemini · Groq · Ollama</text>
+      </g>
+    </g>
+  </g>
+</svg>
